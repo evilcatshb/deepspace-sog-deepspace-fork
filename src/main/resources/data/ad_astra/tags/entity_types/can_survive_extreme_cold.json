@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "deepspace:space_whale",
+    "minecraft:iron_golem",
+    "minecraft:villager",
+    "minecraft:pillager",
+    "minecraft:zombified_piglin",
+    "ad_astra:lunarian"
+  ]
+}

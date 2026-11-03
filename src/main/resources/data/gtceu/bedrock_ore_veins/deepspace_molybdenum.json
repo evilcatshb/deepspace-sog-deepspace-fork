@@ -1,0 +1,29 @@
+{
+  "weight": 80,
+  "size": 16,
+  "yield": 60,
+  "depletion_amount": 1,
+  "depletion_chance": 100,
+  "depleted_yield": 0,
+  "materials": [
+    {
+      "material": "molybdenum",
+      "weight": 35
+    },
+    {
+      "material": "molybdenite",
+      "weight": 30
+    },
+    {
+      "material": "powellite",
+      "weight": 25
+    },
+    {
+      "material": "wulfenite",
+      "weight": 20
+    }
+  ],
+  "dimension_filter": [
+    "deepspace:deep_space"
+  ]
+}

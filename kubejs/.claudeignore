@@ -1,0 +1,39 @@
+# =========================
+# KubeJS runtime outputs
+# =========================
+config/
+logs/
+export/
+generated/
+
+# =========================
+# Cached script outputs
+# =========================
+*.cache
+*.tmp
+
+# =========================
+# Minecraft runtime data
+# =========================
+world/
+server-world/
+run/
+
+# =========================
+# KubeJS compiled/script artifacts
+# =========================
+kubejs/cache/
+kubejs/data/
+kubejs/export/
+kubejs/generated/
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# OS junk
+# =========================
+.DS_Store
+Thumbs.db

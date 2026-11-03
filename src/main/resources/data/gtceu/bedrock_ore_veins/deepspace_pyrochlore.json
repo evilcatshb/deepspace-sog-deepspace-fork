@@ -1,0 +1,21 @@
+{
+  "weight": 60,
+  "size": 16,
+  "yield": 60,
+  "depletion_amount": 1,
+  "depletion_chance": 100,
+  "depleted_yield": 0,
+  "materials": [
+    {
+      "material": "pyrochlore",
+      "weight": 35
+    },
+    {
+      "material": "tantalite",
+      "weight": 25
+    }
+  ],
+  "dimension_filter": [
+    "deepspace:deep_space"
+  ]
+}

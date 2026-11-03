@@ -1,0 +1,14 @@
+{
+  "fluid": "gtceu:methane",
+  "weight": 80,
+  "yield": {
+    "min": 500,
+    "max": 1300
+  },
+  "depletion_amount": 1,
+  "depletion_chance": 1,
+  "depleted_yield": 60,
+  "dimension_filter": [
+    "deepspace:deep_space"
+  ]
+}

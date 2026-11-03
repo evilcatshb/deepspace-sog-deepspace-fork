@@ -1,0 +1,38 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.deepspace.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "deepspace.refmap.json",
+  "plugin": "com.deepspace.compat.superchat.SuperChatCompatMixinPlugin",
+  "mixins": [
+    "StructureTemplatePoolRawTemplatesMixin",
+    "AngelRingFlightExhaustionMixin",
+    "GeneticAnimalsVillagePoolMixin",
+    "DeepSpaceMobGravityMixin",
+    "FireBlockMixin",
+    "PirateTargetMixin",
+    "SaplingGrowthMixin",
+    "SecurityUpgradeMixin",
+    "factionfeedback.ServerFunctionManagerMixin",
+    "factionfeedback.CommandSourceStackMixin",
+    "tacz.LivingEntityCrawlMixin",
+    "FTBChunksWaypointShareMixin",
+    "CapabilityProviderGatherInvoker",
+    "BotariumCapabilityIgnoreStaleMixin",
+    "BotariumCapabilityRebuildMixin",
+    "SuperChatTimestampMixin",
+    "SuperChatDiscordIntegrationMixin"
+  ],
+  "client": [
+    "EmiSearchMixin",
+    "tacz.LocalPlayerCrawlMixin",
+    "GuidebookLevelStarlightCompatMixin",
+    "SchemaLevelStarlightCompatMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
+
+

@@ -1,0 +1,25 @@
+{
+  "weight": 70,
+  "size": 16,
+  "yield": 60,
+  "depletion_amount": 1,
+  "depletion_chance": 100,
+  "depleted_yield": 0,
+  "materials": [
+    {
+      "material": "lithium",
+      "weight": 35
+    },
+    {
+      "material": "spodumene",
+      "weight": 30
+    },
+    {
+      "material": "lepidolite",
+      "weight": 20
+    }
+  ],
+  "dimension_filter": [
+    "deepspace:deep_space"
+  ]
+}

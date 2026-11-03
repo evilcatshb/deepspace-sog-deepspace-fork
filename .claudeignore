@@ -1,0 +1,63 @@
+# =========================
+# Gradle / Build System
+# =========================
+.gradle/
+build/
+out/
+classes/
+generated/
+
+# Build artifacts
+*.jar
+!libs/*.jar
+
+# Temporary / intermediate build files
+build/tmp/
+build/reobfJar/
+build/fg_cache/
+build/create*/
+build/extract*/
+build/download*/
+
+# =========================
+# IDEs
+# =========================
+.idea/
+*.iml
+.vscode/
+
+# =========================
+# OS junk
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs / runtime
+# =========================
+logs/
+*.log
+run/
+
+# =========================
+# Forge / Minecraft runtime caches
+# =========================
+fabric-cache/
+forge-cache/
+
+# =========================
+# Gradle wrapper noise (optional keep jar, ignore metadata churn)
+# =========================
+.gradle/8.*/
+.gradle/vcs-1/
+
+# =========================
+# Local development overrides
+# =========================
+local.properties
+*.local.json
+
+# =========================
+# Generated resources
+# =========================
+src/generated/

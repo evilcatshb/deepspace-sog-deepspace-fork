@@ -1,0 +1,50 @@
+{
+  "block.deepspace.exotic_ice": "Exotic Ice",
+  "block.deepspace.tar_shell": "Tar Shell",
+  "block.deepspace.alien_stone": "Alien Stone",
+  "block.deepspace.breeder_reactor": "Small Breeder Reactor",
+  "block.deepspace.fossil": "Fossil",
+  "block.deepspace.ship_scanner": "Ship Scanner",
+
+  "item.deepspace.exotic_ice": "Exotic Ice",
+  "item.deepspace.tar_shell": "Tar Shell",
+  "item.deepspace.alien_stone": "Alien Stone",
+  "item.deepspace.breeder_reactor": "Small Breeder Reactor",
+  "item.deepspace.fossil": "Fossil",
+  "item.deepspace.ship_scanner": "Ship Scanner",
+  "item.deepspace.space_whale_meat": "Space Whale Meat",
+  "item.deepspace.space_whale_steak": "Space Whale Steak",
+  "item.deepspace.space_whale_saddle": "Space Whale Saddle",
+  "item.deepspace.abnormality_scanner": "Abnormality Scanner",
+
+  "entity.deepspace.space_whale": "Space Whale",
+
+  "dimension.deepspace.deep_space": "Deep Space",
+  "planet.ad_astra.solar_system.deepspace.deep_space": "Deep Space",
+  "planet.deepspace.deep_space": "Deep Space",
+
+  "container.deepspace.breeder_reactor": "Small Breeder Reactor",
+
+  "deepspace.message.first_spawn": "Welcome to Deep Space. Stabilise oxygen first.",
+  "deepspace.message.no_spawn_found": "WARNING: Could not find isolated spawn position. Contact admin.",
+  "deepspace.message.reactor_status": "Reactor fuel remaining: %s ticks (%sh)",
+  "deepspace.message.reactor_empty": "WARNING: Breeder Reactor is out of fuel!",
+
+  "deepspace.tab.main": "Deep Space",
+
+  "deepspace.tooltip.exotic_ice": "Yields 8,000 mB water when processed in an LV Heater.",
+  "deepspace.tooltip.tar_shell": "Outer crust of a carbonaceous asteroid. A fluid vein lies beneath.",
+  "deepspace.tooltip.alien_stone": "Dense crystalline rock from outer system asteroids.",
+  "deepspace.tooltip.breeder_reactor": "Multi-fuel power source. Burns Uranium, Uranium-235, or Thorium Ingots.",
+  "deepspace.tooltip.fossil": "Ancient bio-mineral deposit. Sift for biological starter resources.",
+  "deepspace.tooltip.space_whale_meat": "Causes Food Poisoning when consumed. Cook it first.",
+  "deepspace.tooltip.space_whale_steak": "Heals 8 hearts. Worth the hunt.",
+  "deepspace.tooltip.space_whale_saddle": "Used to ride a tamed Space Whale.",
+  "deepspace.tooltip.abnormality_scanner": "Scans for nearby anomalous structures. Right-click to activate.",
+  "tooltip.deepspace.ship_scanner": "EU Input: 32 eu/t @ LV. Connect CC:Tweaked computer and supply 1A LV EU.",
+
+  "deepspace.zone.zone_1": "Industrial Belt (Steam\u2013LV)",
+  "deepspace.zone.zone_2": "Advanced Resource Ring (MV)",
+  "deepspace.zone.zone_3": "Deep Space Belt (HV\u2013LuV)",
+  "deepspace.zone.zone_4": "Outer System (ZPM+)"
+}

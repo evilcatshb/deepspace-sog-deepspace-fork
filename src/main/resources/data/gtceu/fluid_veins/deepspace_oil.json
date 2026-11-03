@@ -1,0 +1,14 @@
+{
+  "fluid": "gtceu:oil",
+  "weight": 120,
+  "yield": {
+    "min": 400,
+    "max": 1000
+  },
+  "depletion_amount": 1,
+  "depletion_chance": 1,
+  "depleted_yield": 50,
+  "dimension_filter": [
+    "deepspace:deep_space"
+  ]
+}

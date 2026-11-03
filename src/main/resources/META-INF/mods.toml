@@ -1,0 +1,96 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+    modId="deepspace"
+    version="1.0.0"
+    displayName="Deep Space"
+    description='''
+Asteroid survival dimension. Distance = progression. Engineering = survival.
+Players spawn in a personal crashed ship. The overworld is disabled.
+'''
+
+[[dependencies.deepspace]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47.1,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.deepspace]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.deepspace]]
+    modId="gtceu"
+    mandatory=true
+    versionRange="[7.5,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.deepspace]]
+    modId="ad_astra"
+    mandatory=true
+    versionRange="[1.15,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.deepspace]]
+    modId="ftbchunks"
+    mandatory=true
+    versionRange="[2001.3,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.deepspace]]
+    modId="ftblibrary"
+    mandatory=true
+    versionRange="[2001.2,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.deepspace]]
+    modId="ae2"
+    mandatory=true
+    versionRange="[15.4,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.deepspace]]
+    modId="kubejs"
+    mandatory=false
+    versionRange="[2001.6,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.deepspace]]
+    modId="architectury"
+    mandatory=false
+    versionRange="[9.2,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.deepspace]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[4.8,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.deepspace]]
+    modId="worldedit"
+    mandatory=false
+    versionRange="[7.2,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.deepspace]]
+    modId="computercraft"
+    mandatory=false
+    versionRange="[1.113,)"
+    ordering="AFTER"
+    side="BOTH"

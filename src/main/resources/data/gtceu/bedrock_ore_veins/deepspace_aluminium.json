@@ -1,0 +1,25 @@
+{
+  "weight": 80,
+  "size": 16,
+  "yield": 60,
+  "depletion_amount": 1,
+  "depletion_chance": 100,
+  "depleted_yield": 0,
+  "materials": [
+    {
+      "material": "aluminium",
+      "weight": 35
+    },
+    {
+      "material": "bauxite",
+      "weight": 30
+    },
+    {
+      "material": "ilmenite",
+      "weight": 25
+    }
+  ],
+  "dimension_filter": [
+    "deepspace:deep_space"
+  ]
+}

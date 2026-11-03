@@ -1,0 +1,26 @@
+# Gradle caches and generated build output
+.gradle/
+build/
+
+# Local editor and agent state
+.idea/
+.vscode/
+.claude/
+local.properties
+
+# Build logs and JVM crash diagnostics
+*.log
+hs_err_pid*.log
+
+# Local safety backups and backup snapshots
+*.BAK*
+*.bak
+backup_before_*/
+*.zip
+
+# Local Minecraft client binary (not source or a required compile dependency)
+libs/client.jar
+
+# OS metadata
+.DS_Store
+Thumbs.db

@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven {
+            name = 'MinecraftForge'
+            url  = 'https://maven.minecraftforge.net'
+        }
+        maven {
+            name = 'ParchmentMC'
+            url  = 'https://maven.parchmentmc.org'
+        }
+    }
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == 'org.parchmentmc.librarian.forgegradle') {
+                useModule("org.parchmentmc.librarian.forgegradle:org.parchmentmc.librarian.forgegradle.gradle.plugin:${requested.version}")
+            }
+        }
+    }
+}
+
+rootProject.name = 'deepspace'

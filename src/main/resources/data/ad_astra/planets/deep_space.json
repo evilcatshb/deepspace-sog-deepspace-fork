@@ -1,0 +1,23 @@
+{
+  "dimension": "deepspace:deep_space",
+  "gravity": 0.1,
+  "oxygen": false,
+  "solar_power": 2,
+  "solar_system": "ad_astra:solar_system",
+  "temperature": -200,
+  "tier": 2,
+  "additional_launch_dimensions": [
+    "minecraft:overworld",
+    "ad_astra:earth_orbit",
+    "ad_astra:moon",
+    "ad_astra:moon_orbit",
+    "ad_astra:mars",
+    "ad_astra:mars_orbit",
+    "ad_astra:venus",
+    "ad_astra:venus_orbit",
+    "ad_astra:mercury",
+    "ad_astra:mercury_orbit",
+    "ad_astra:glacio",
+    "ad_astra:glacio_orbit"
+  ]
+}

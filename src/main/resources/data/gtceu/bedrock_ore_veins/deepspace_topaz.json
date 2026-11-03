@@ -1,0 +1,37 @@
+{
+  "weight": 80,
+  "size": 16,
+  "yield": 60,
+  "depletion_amount": 1,
+  "depletion_chance": 100,
+  "depleted_yield": 0,
+  "materials": [
+    {
+      "material": "topaz",
+      "weight": 35
+    },
+    {
+      "material": "blue_topaz",
+      "weight": 30
+    },
+    {
+      "material": "opal",
+      "weight": 25
+    },
+    {
+      "material": "amethyst",
+      "weight": 20
+    },
+    {
+      "material": "green_sapphire",
+      "weight": 15
+    },
+    {
+      "material": "sapphire",
+      "weight": 10
+    }
+  ],
+  "dimension_filter": [
+    "deepspace:deep_space"
+  ]
+}

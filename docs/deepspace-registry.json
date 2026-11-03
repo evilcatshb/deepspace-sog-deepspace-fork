@@ -1,0 +1,306 @@
+{
+"dimension": "deepspace:deep_space",
+"version": 1,
+"description": "Machine-readable registry for Deep Space asteroid generation and progression scaling.",
+"global_rules": {
+"asteroid_band_y_min": 0,
+"asteroid_band_y_max": 120,
+"min_spacing_blocks": 48,
+"avg_spacing_blocks": [96, 160],
+"personal_bubble_radius_chunks": [10, 15],
+"prevent_generation_in_claimed_chunks": true,
+"dimension_tag": "ad_astra:space",
+"distance_scaling_origin": "player_crash_site"
+},
+
+"zones": [
+{
+"id": "zone_1",
+"name": "Industrial Belt",
+"distance_blocks": [300, 1500],
+"tier": ["Steam", "LV"]
+},
+{
+"id": "zone_2",
+"name": "Advanced Resource Ring",
+"distance_blocks": [1500, 5000],
+"tier": ["MV"]
+},
+{
+"id": "zone_3",
+"name": "Deep Space Belt",
+"distance_blocks": [5000, 15000],
+"tier": ["HV", "EV", "IV", "LuV"]
+},
+{
+"id": "zone_4",
+"name": "Outer System",
+"distance_blocks": [15000, 99999999],
+"tier": ["ZPM", "UV+"]
+}
+],
+
+"spawn_guarantees": {
+"search_radius_blocks": 1200,
+"required_resources": [
+"ice",
+"raw_iron",
+"raw_copper",
+"raw_tin",
+"stone"
+],
+"injection_rules": {
+"only_inside_personal_bubble": true,
+"abort_if_chunk_claimed": true,
+"abort_if_structure_present": true
+}
+},
+
+"asteroids": [
+
+```
+{
+  "id": "stone_common",
+  "zone": "zone_1",
+  "spawn_weight": 120,
+  "category": "silicate",
+  "outer_shell": ["minecraft:stone"],
+  "inner_blocks": ["minecraft:stone"],
+  "ores": ["minecraft:coal_ore", "minecraft:iron_ore"],
+  "fluid": null,
+  "has_drilling_vein": false,
+  "avg_fluid_amount_mb": 0
+},
+
+{
+  "id": "copper_asteroid",
+  "zone": "zone_1",
+  "spawn_weight": 90,
+  "category": "metallic",
+  "outer_shell": ["minecraft:stone"],
+  "inner_blocks": ["minecraft:granite"],
+  "ores": ["gtceu:raw_copper"],
+  "fluid": null,
+  "has_drilling_vein": false,
+  "avg_fluid_amount_mb": 0
+},
+
+{
+  "id": "tin_asteroid",
+  "zone": "zone_1",
+  "spawn_weight": 80,
+  "category": "metallic",
+  "outer_shell": ["minecraft:stone"],
+  "inner_blocks": ["minecraft:andesite"],
+  "ores": ["gtceu:raw_tin"],
+  "fluid": null,
+  "has_drilling_vein": false,
+  "avg_fluid_amount_mb": 0
+},
+
+{
+  "id": "iron_core",
+  "zone": "zone_1",
+  "spawn_weight": 85,
+  "category": "metallic",
+  "outer_shell": ["minecraft:stone"],
+  "inner_blocks": ["minecraft:iron_block", "minecraft:stone"],
+  "ores": ["gtceu:raw_iron"],
+  "fluid": null,
+  "has_drilling_vein": false,
+  "avg_fluid_amount_mb": 0
+},
+
+{
+  "id": "ice_asteroid",
+  "zone": "zone_1",
+  "spawn_weight": 70,
+  "category": "icy",
+  "outer_shell": ["minecraft:packed_ice"],
+  "inner_blocks": ["minecraft:ice"],
+  "ores": [],
+  "fluid": "minecraft:water",
+  "has_drilling_vein": true,
+  "avg_fluid_amount_mb": 200000
+},
+
+{
+  "id": "lava_asteroid",
+  "zone": "zone_1",
+  "spawn_weight": 40,
+  "category": "volcanic",
+  "outer_shell": ["minecraft:basalt"],
+  "inner_blocks": ["minecraft:lava"],
+  "ores": [],
+  "fluid": "minecraft:lava",
+  "has_drilling_vein": true,
+  "avg_fluid_amount_mb": 150000
+},
+
+{
+  "id": "gold_asteroid",
+  "zone": "zone_2",
+  "spawn_weight": 50,
+  "category": "metallic",
+  "outer_shell": ["minecraft:stone"],
+  "inner_blocks": ["minecraft:granite"],
+  "ores": ["gtceu:raw_gold"],
+  "fluid": null,
+  "has_drilling_vein": false,
+  "avg_fluid_amount_mb": 0
+},
+
+{
+  "id": "silver_asteroid",
+  "zone": "zone_2",
+  "spawn_weight": 45,
+  "category": "metallic",
+  "outer_shell": ["minecraft:stone"],
+  "inner_blocks": ["minecraft:calcite"],
+  "ores": ["gtceu:raw_silver"],
+  "fluid": null,
+  "has_drilling_vein": false,
+  "avg_fluid_amount_mb": 0
+},
+
+{
+  "id": "nickel_asteroid",
+  "zone": "zone_2",
+  "spawn_weight": 40,
+  "category": "metallic",
+  "outer_shell": ["minecraft:stone"],
+  "inner_blocks": ["minecraft:basalt"],
+  "ores": ["gtceu:raw_nickel"],
+  "fluid": null,
+  "has_drilling_vein": false,
+  "avg_fluid_amount_mb": 0
+},
+
+{
+  "id": "oil_asteroid",
+  "zone": "zone_2",
+  "spawn_weight": 35,
+  "category": "carbonaceous",
+  "outer_shell": ["deepspace:tar_shell"],
+  "inner_blocks": ["minecraft:stone"],
+  "ores": [],
+  "fluid": "gtceu:oil",
+  "has_drilling_vein": true,
+  "avg_fluid_amount_mb": 700000
+},
+
+{
+  "id": "bauxite_asteroid",
+  "zone": "zone_3",
+  "spawn_weight": 40,
+  "category": "silicate",
+  "outer_shell": ["minecraft:stone"],
+  "inner_blocks": ["minecraft:clay"],
+  "ores": ["gtceu:raw_bauxite"],
+  "fluid": null,
+  "has_drilling_vein": false,
+  "avg_fluid_amount_mb": 0
+},
+
+{
+  "id": "titanium_asteroid",
+  "zone": "zone_3",
+  "spawn_weight": 30,
+  "category": "metallic",
+  "outer_shell": ["minecraft:basalt"],
+  "inner_blocks": ["minecraft:stone"],
+  "ores": ["gtceu:raw_titanium"],
+  "fluid": null,
+  "has_drilling_vein": false,
+  "avg_fluid_amount_mb": 0
+},
+
+{
+  "id": "methane_gas_asteroid",
+  "zone": "zone_3",
+  "spawn_weight": 20,
+  "category": "gas",
+  "outer_shell": ["minecraft:stone"],
+  "inner_blocks": ["minecraft:air"],
+  "ores": [],
+  "fluid": "gtceu:methane",
+  "has_drilling_vein": true,
+  "avg_fluid_amount_mb": 900000
+},
+
+{
+  "id": "hydrogen_gas_asteroid",
+  "zone": "zone_3",
+  "spawn_weight": 18,
+  "category": "gas",
+  "outer_shell": ["minecraft:stone"],
+  "inner_blocks": ["minecraft:air"],
+  "ores": [],
+  "fluid": "gtceu:hydrogen",
+  "has_drilling_vein": true,
+  "avg_fluid_amount_mb": 800000
+},
+
+{
+  "id": "exotic_ice_asteroid",
+  "zone": "zone_3",
+  "spawn_weight": 15,
+  "category": "icy",
+  "outer_shell": ["minecraft:blue_ice"],
+  "inner_blocks": ["deepspace:exotic_ice"],
+  "ores": [],
+  "fluid": "minecraft:water",
+  "has_drilling_vein": true,
+  "avg_fluid_amount_mb": 3500000
+},
+
+{
+  "id": "platinum_asteroid",
+  "zone": "zone_4",
+  "spawn_weight": 20,
+  "category": "metallic",
+  "outer_shell": ["minecraft:basalt"],
+  "inner_blocks": ["minecraft:dense_stone"],
+  "ores": ["gtceu:raw_platinum"],
+  "fluid": null,
+  "has_drilling_vein": false,
+  "avg_fluid_amount_mb": 0
+},
+
+{
+  "id": "uranium_asteroid",
+  "zone": "zone_4",
+  "spawn_weight": 15,
+  "category": "radioactive",
+  "outer_shell": ["minecraft:basalt"],
+  "inner_blocks": ["minecraft:stone"],
+  "ores": ["gtceu:raw_uranium"],
+  "fluid": null,
+  "has_drilling_vein": false,
+  "avg_fluid_amount_mb": 0
+},
+
+{
+  "id": "naquadah_asteroid",
+  "zone": "zone_4",
+  "spawn_weight": 5,
+  "category": "exotic",
+  "outer_shell": ["minecraft:obsidian"],
+  "inner_blocks": ["deepspace:alien_stone"],
+  "ores": ["gtceu:raw_naquadah"],
+  "fluid": null,
+  "has_drilling_vein": false,
+  "avg_fluid_amount_mb": 0
+}
+```
+
+],
+
+"generation_logic": {
+"tier_resolution": "distance_from_nearest_crash_site",
+"personal_seed_formula": "hash(worldSeed + playerUUID)",
+"fluid_vein_alignment": "center_chunk_below_asteroid",
+"retry_attempts_if_conflict": 8,
+"abort_if_claim_detected": true
+}
+}

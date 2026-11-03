@@ -1,0 +1,7084 @@
+{
+  "dimension": "deepspace:deep_space",
+  "version": 2,
+  "description": "Deep Space asteroid registry v2 \u2014 full GT ore coverage, stone/deepslate/granite variants.",
+  "global_rules": {
+    "asteroid_band_y_min": 0,
+    "asteroid_band_y_max": 120,
+    "min_spacing_blocks": 48,
+    "avg_spacing_blocks": [
+      96,
+      160
+    ],
+    "personal_bubble_radius_chunks": [
+      10,
+      15
+    ],
+    "prevent_generation_in_claimed_chunks": true,
+    "distance_scaling_origin": "player_crash_site"
+  },
+  "zones": [
+    {
+      "id": "zone_1",
+      "name": "Industrial Belt",
+      "distance_blocks": [
+        300,
+        1500
+      ],
+      "tier": [
+        "Steam",
+        "LV"
+      ]
+    },
+    {
+      "id": "zone_2",
+      "name": "Advanced Resource Ring",
+      "distance_blocks": [
+        1500,
+        5000
+      ],
+      "tier": [
+        "MV"
+      ]
+    },
+    {
+      "id": "zone_3",
+      "name": "Deep Space Belt",
+      "distance_blocks": [
+        5000,
+        15000
+      ],
+      "tier": [
+        "HV",
+        "EV",
+        "IV",
+        "LuV"
+      ]
+    },
+    {
+      "id": "zone_4",
+      "name": "Outer System",
+      "distance_blocks": [
+        15000,
+        99999999
+      ],
+      "tier": [
+        "ZPM",
+        "UV+"
+      ]
+    }
+  ],
+  "spawn_guarantees": {
+    "search_radius_blocks": 1200,
+    "required_resources": [
+      "ice",
+      "raw_iron",
+      "raw_copper",
+      "raw_tin",
+      "stone"
+    ],
+    "injection_rules": {
+      "only_inside_personal_bubble": true,
+      "abort_if_chunk_claimed": true,
+      "abort_if_structure_present": true
+    }
+  },
+  "asteroids": [
+    {
+      "id": "iron_stone_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 90,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_iron_ore",
+        "gtceu:stone_cobaltite_ore",
+        "gtceu:stone_pyrite_ore",
+        "gtceu:stone_magnetite_ore",
+        "minecraft:iron_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "iron_deepslate_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 67,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_iron_ore",
+        "gtceu:deepslate_cobaltite_ore",
+        "gtceu:deepslate_pyrite_ore",
+        "gtceu:deepslate_magnetite_ore",
+        "minecraft:deepslate_iron_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "iron_granite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 67,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_iron_ore",
+        "gtceu:granite_cobaltite_ore",
+        "gtceu:granite_pyrite_ore",
+        "gtceu:granite_magnetite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "copper_stone_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 90,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_copper_ore",
+        "gtceu:stone_chalcopyrite_ore",
+        "gtceu:stone_bornite_ore",
+        "gtceu:stone_chalcocite_ore",
+        "minecraft:copper_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "copper_deepslate_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 67,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_copper_ore",
+        "gtceu:deepslate_chalcopyrite_ore",
+        "gtceu:deepslate_bornite_ore",
+        "gtceu:deepslate_chalcocite_ore",
+        "minecraft:deepslate_copper_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "copper_granite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 67,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_copper_ore",
+        "gtceu:granite_chalcopyrite_ore",
+        "gtceu:granite_bornite_ore",
+        "gtceu:granite_chalcocite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "tin_stone_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 80,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_tin_ore",
+        "gtceu:stone_cassiterite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "tin_deepslate_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 60,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_tin_ore",
+        "gtceu:deepslate_cassiterite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "tin_granite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 60,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_tin_ore",
+        "gtceu:granite_cassiterite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "coal_stone_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 85,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_coal_ore",
+        "gtceu:stone_graphite_ore",
+        "minecraft:coal_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "coal_deepslate_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 63,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_coal_ore",
+        "gtceu:deepslate_graphite_ore",
+        "minecraft:deepslate_coal_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "coal_granite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 63,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_coal_ore",
+        "gtceu:granite_graphite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "nickel_stone_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 75,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_nickel_ore",
+        "gtceu:stone_pentlandite_ore",
+        "gtceu:stone_garnierite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "nickel_deepslate_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 56,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_nickel_ore",
+        "gtceu:deepslate_pentlandite_ore",
+        "gtceu:deepslate_garnierite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "nickel_granite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 56,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_nickel_ore",
+        "gtceu:granite_pentlandite_ore",
+        "gtceu:granite_garnierite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "lead_stone_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 70,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_lead_ore",
+        "gtceu:stone_galena_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "lead_deepslate_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 52,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_lead_ore",
+        "gtceu:deepslate_galena_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "lead_granite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 52,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_lead_ore",
+        "gtceu:granite_galena_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "silver_stone_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 65,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_silver_ore",
+        "gtceu:stone_galena_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "silver_deepslate_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 48,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_silver_ore",
+        "gtceu:deepslate_galena_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "silver_granite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 48,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_silver_ore",
+        "gtceu:granite_galena_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "gold_stone_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 60,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_gold_ore",
+        "gtceu:stone_magnetite_ore",
+        "gtceu:stone_hematite_ore",
+        "minecraft:gold_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "gold_deepslate_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 45,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_gold_ore",
+        "gtceu:deepslate_magnetite_ore",
+        "gtceu:deepslate_hematite_ore",
+        "minecraft:deepslate_gold_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "gold_granite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 45,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_gold_ore",
+        "gtceu:granite_magnetite_ore",
+        "gtceu:granite_hematite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "sulfur_stone_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 55,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_sulfur_ore",
+        "gtceu:stone_pyrite_ore",
+        "gtceu:stone_saltpeter_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "sulfur_deepslate_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 41,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_sulfur_ore",
+        "gtceu:deepslate_pyrite_ore",
+        "gtceu:deepslate_saltpeter_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "sulfur_granite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 41,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_sulfur_ore",
+        "gtceu:granite_pyrite_ore",
+        "gtceu:granite_saltpeter_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "salt_stone_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 55,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_salt_ore",
+        "gtceu:stone_rock_salt_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "salt_deepslate_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 41,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_salt_ore",
+        "gtceu:deepslate_rock_salt_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "salt_granite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 41,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_salt_ore",
+        "gtceu:granite_rock_salt_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "aluminium_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 50,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_aluminium_ore",
+        "gtceu:stone_bauxite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "aluminium_deepslate_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 37,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_aluminium_ore",
+        "gtceu:deepslate_bauxite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "aluminium_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 37,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_aluminium_ore",
+        "gtceu:granite_bauxite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "chromite_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 45,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_chromite_ore",
+        "gtceu:stone_vanadium_magnetite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "chromite_deepslate_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 33,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_chromite_ore",
+        "gtceu:deepslate_vanadium_magnetite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "chromite_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 33,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_chromite_ore",
+        "gtceu:granite_vanadium_magnetite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "redstone_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 60,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_redstone_ore",
+        "gtceu:stone_ruby_ore",
+        "gtceu:stone_cinnabar_ore",
+        "minecraft:redstone_ore",
+        "gtceu:stone_ilmenite_ore",
+        "gtceu:realgar_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "redstone_deepslate_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 45,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_redstone_ore",
+        "gtceu:deepslate_ruby_ore",
+        "gtceu:deepslate_cinnabar_ore",
+        "minecraft:deepslate_redstone_ore",
+        "gtceu:deepslate_ilmenite_ore",
+        "gtceu:deepslate_realgar_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "redstone_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 45,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_redstone_ore",
+        "gtceu:granite_ruby_ore",
+        "gtceu:granite_cinnabar_ore",
+        "gtceu:granite_ilmenite_ore",
+        "gtceu:granite_realgar_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "sphalerite_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 45,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_sphalerite_ore",
+        "gtceu:stone_tetrahedrite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "sphalerite_deepslate_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 33,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_sphalerite_ore",
+        "gtceu:deepslate_tetrahedrite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "sphalerite_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 33,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_sphalerite_ore",
+        "gtceu:granite_tetrahedrite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "chalcopyrite_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 45,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_chalcopyrite_ore",
+        "gtceu:stone_copper_ore",
+        "gtceu:stone_pyrite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "chalcopyrite_deepslate_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 33,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_chalcopyrite_ore",
+        "gtceu:deepslate_copper_ore",
+        "gtceu:deepslate_pyrite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "chalcopyrite_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 33,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_chalcopyrite_ore",
+        "gtceu:granite_copper_ore",
+        "gtceu:granite_pyrite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "garnet_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 40,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_garnet_red_ore",
+        "gtceu:stone_garnet_yellow_ore",
+        "gtceu:stone_almandine_ore",
+        "gtceu:stone_grossular_ore",
+        "gtceu:stone_pyrope_ore",
+        "gtceu:stone_spessartine_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "garnet_deepslate_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 30,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_garnet_red_ore",
+        "gtceu:deepslate_garnet_yellow_ore",
+        "gtceu:deepslate_almandine_ore",
+        "gtceu:deepslate_grossular_ore",
+        "gtceu:deepslate_pyrope_ore",
+        "gtceu:deepslate_spessartine_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "garnet_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 30,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_garnet_red_ore",
+        "gtceu:granite_garnet_yellow_ore",
+        "gtceu:granite_almandine_ore",
+        "gtceu:granite_grossular_ore",
+        "gtceu:granite_pyrope_ore",
+        "gtceu:granite_spessartine_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "mica_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 40,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_mica_ore",
+        "gtceu:stone_bentonite_ore",
+        "gtceu:stone_zeolite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "mica_deepslate_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 30,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_mica_ore",
+        "gtceu:deepslate_bentonite_ore",
+        "gtceu:deepslate_zeolite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "mica_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 30,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_mica_ore",
+        "gtceu:granite_bentonite_ore",
+        "gtceu:granite_zeolite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "olivine_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 38,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_olivine_ore",
+        "gtceu:stone_calcite_ore",
+        "gtceu:stone_magnesite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "olivine_deepslate_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 28,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_olivine_ore",
+        "gtceu:deepslate_calcite_ore",
+        "gtceu:deepslate_magnesite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "olivine_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 28,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_olivine_ore",
+        "gtceu:granite_calcite_ore",
+        "gtceu:granite_magnesite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "diamond_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 35,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_diamond_ore",
+        "gtceu:stone_graphite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "diamond_deepslate_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 26,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_diamond_ore",
+        "gtceu:deepslate_graphite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "diamond_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 26,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_diamond_ore",
+        "gtceu:granite_graphite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "emerald_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 35,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_emerald_ore",
+        "gtceu:stone_beryllium_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "emerald_deepslate_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 26,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_emerald_ore",
+        "gtceu:deepslate_beryllium_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "emerald_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 26,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_emerald_ore",
+        "gtceu:granite_beryllium_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "topaz_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 35,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_topaz_ore",
+        "gtceu:stone_blue_topaz_ore",
+        "gtceu:stone_opal_ore",
+        "gtceu:stone_amethyst_ore",
+        "gtceu:stone_green_sapphire_ore",
+        "gtceu:stone_sapphire_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "topaz_deepslate_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 26,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_topaz_ore",
+        "gtceu:deepslate_blue_topaz_ore",
+        "gtceu:deepslate_opal_ore",
+        "gtceu:deepslate_amethyst_ore",
+        "gtceu:deepslate_green_sapphire_ore",
+        "gtceu:deepslate_sapphire_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "topaz_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 26,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_topaz_ore",
+        "gtceu:granite_blue_topaz_ore",
+        "gtceu:granite_opal_ore",
+        "gtceu:granite_amethyst_ore",
+        "gtceu:granite_green_sapphire_ore",
+        "gtceu:granite_sapphire_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "apatite_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 38,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_apatite_ore",
+        "gtceu:stone_tricalcium_phosphate_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "apatite_deepslate_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 28,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_apatite_ore",
+        "gtceu:deepslate_tricalcium_phosphate_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "apatite_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 28,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_apatite_ore",
+        "gtceu:granite_tricalcium_phosphate_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "salts_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 40,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_salt_ore",
+        "gtceu:stone_rock_salt_ore",
+        "gtceu:stone_lepidolite_ore",
+        "gtceu:stone_spodumene_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "salts_deepslate_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 30,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_salt_ore",
+        "gtceu:deepslate_rock_salt_ore",
+        "gtceu:deepslate_lepidolite_ore",
+        "gtceu:deepslate_spodumene_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "salts_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 30,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_salt_ore",
+        "gtceu:granite_rock_salt_ore",
+        "gtceu:granite_lepidolite_ore",
+        "gtceu:granite_spodumene_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "manganese_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 38,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_manganese_ore",
+        "gtceu:stone_tantalite_ore",
+        "gtceu:stone_chromite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "manganese_deepslate_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 28,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_manganese_ore",
+        "gtceu:deepslate_tantalite_ore",
+        "gtceu:deepslate_chromite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "manganese_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 28,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_manganese_ore",
+        "gtceu:granite_tantalite_ore",
+        "gtceu:granite_chromite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "platinum_stone_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 25,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_platinum_ore",
+        "gtceu:stone_cooperite_ore",
+        "gtceu:stone_palladium_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "platinum_deepslate_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 18,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_platinum_ore",
+        "gtceu:deepslate_cooperite_ore",
+        "gtceu:deepslate_palladium_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "monazite_stone_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 22,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_monazite_ore",
+        "gtceu:stone_neodymium_ore",
+        "gtceu:stone_bastnasite_ore",
+        "gtceu:stone_thorium_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "monazite_deepslate_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_monazite_ore",
+        "gtceu:deepslate_neodymium_ore",
+        "gtceu:deepslate_bastnasite_ore",
+        "gtceu:deepslate_thorium_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "molybdenum_stone_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 22,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_molybdenum_ore",
+        "gtceu:stone_molybdenite_ore",
+        "gtceu:stone_powellite_ore",
+        "gtceu:stone_wulfenite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "molybdenum_deepslate_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_molybdenum_ore",
+        "gtceu:deepslate_molybdenite_ore",
+        "gtceu:deepslate_powellite_ore",
+        "gtceu:deepslate_wulfenite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "scheelite_stone_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 20,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_scheelite_ore",
+        "gtceu:stone_tungstate_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "scheelite_deepslate_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 15,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_scheelite_ore",
+        "gtceu:deepslate_tungstate_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "pitchblende_stone_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 22,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_pitchblende_ore",
+        "gtceu:stone_uraninite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "pitchblende_deepslate_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_pitchblende_ore",
+        "gtceu:deepslate_uraninite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "beryllium_stone_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 20,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_beryllium_ore",
+        "gtceu:stone_emerald_ore",
+        "gtceu:stone_thorium_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "beryllium_deepslate_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 15,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_beryllium_ore",
+        "gtceu:deepslate_emerald_ore",
+        "gtceu:deepslate_thorium_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "vanadiummag_stone_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 20,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_vanadium_magnetite_ore",
+        "gtceu:stone_chromite_ore",
+        "gtceu:stone_magnetite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "vanadiummag_deepslate_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 15,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_vanadium_magnetite_ore",
+        "gtceu:deepslate_chromite_ore",
+        "gtceu:deepslate_magnetite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "spodumene_stone_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 22,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_spodumene_ore",
+        "gtceu:stone_lepidolite_ore",
+        "gtceu:stone_pollucite_ore",
+        "gtceu:stone_zeolite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "spodumene_deepslate_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_spodumene_ore",
+        "gtceu:deepslate_lepidolite_ore",
+        "gtceu:deepslate_pollucite_ore",
+        "gtceu:deepslate_zeolite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "electrotine_stone_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 18,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_electrotine_ore",
+        "gtceu:stone_redstone_ore",
+        "gtceu:stone_ruby_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "electrotine_deepslate_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 13,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_electrotine_ore",
+        "gtceu:deepslate_redstone_ore",
+        "gtceu:deepslate_ruby_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "cassiterite_stone_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 22,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_cassiterite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "cassiterite_deepslate_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_cassiterite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "naquadah_stone_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 8,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_naquadah_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "naquadah_deepslate_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 6,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_naquadah_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "iridium_stone_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 10,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_iridium_ore",
+        "gtceu:stone_osmium_ore",
+        "gtceu:stone_platinum_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "iridium_deepslate_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 7,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_iridium_ore",
+        "gtceu:deepslate_osmium_ore",
+        "gtceu:deepslate_platinum_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "tungsten_stone_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 15,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_tungsten_ore",
+        "gtceu:stone_scheelite_ore",
+        "gtceu:stone_tungstate_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "tungsten_deepslate_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 11,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_tungsten_ore",
+        "gtceu:deepslate_scheelite_ore",
+        "gtceu:deepslate_tungstate_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "uraninite_stone_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 12,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_uraninite_ore",
+        "gtceu:stone_pitchblende_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "uraninite_deepslate_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 9,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_uraninite_ore",
+        "gtceu:deepslate_pitchblende_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "cooperite_stone_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 10,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_cooperite_ore",
+        "gtceu:stone_palladium_ore",
+        "gtceu:stone_platinum_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "cooperite_deepslate_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 7,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_cooperite_ore",
+        "gtceu:deepslate_palladium_ore",
+        "gtceu:deepslate_platinum_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "thorium_stone_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 10,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_thorium_ore",
+        "gtceu:stone_uranium_ore",
+        "gtceu:stone_uraninite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "thorium_deepslate_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 7,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_thorium_ore",
+        "gtceu:deepslate_uranium_ore",
+        "gtceu:deepslate_uraninite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "kyanite_stone_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 15,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_kyanite_ore",
+        "gtceu:stone_lazurite_ore",
+        "gtceu:stone_sodalite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "kyanite_deepslate_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 11,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_kyanite_ore",
+        "gtceu:deepslate_lazurite_ore",
+        "gtceu:deepslate_sodalite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "bastnasite_stone_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 12,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_bastnasite_ore",
+        "gtceu:stone_monazite_ore",
+        "gtceu:stone_neodymium_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "bastnasite_deepslate_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 9,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_bastnasite_ore",
+        "gtceu:deepslate_monazite_ore",
+        "gtceu:deepslate_neodymium_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "ice_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 70,
+      "category": "icy",
+      "outer_shell": [
+        "minecraft:packed_ice"
+      ],
+      "inner_blocks": [
+        "minecraft:ice"
+      ],
+      "ores": [
+        "deepspace:fossil",
+        "minecraft:bone_block"
+      ],
+      "fluid": "minecraft:water",
+      "has_drilling_vein": true,
+      "avg_fluid_amount_mb": 200000
+    },
+    {
+      "id": "soil_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 60,
+      "category": "dirt",
+      "outer_shell": [
+        "minecraft:coarse_dirt"
+      ],
+      "inner_blocks": [
+        "minecraft:coarse_dirt"
+      ],
+      "ores": [
+        "minecraft:coal_ore",
+        "deepspace:fossil",
+        "minecraft:bone_block"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "dirt_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 60,
+      "category": "dirt",
+      "outer_shell": [
+        "minecraft:coarse_dirt"
+      ],
+      "inner_blocks": [
+        "minecraft:coarse_dirt"
+      ],
+      "ores": [
+        "minecraft:coal_ore",
+        "deepspace:fossil",
+        "minecraft:bone_block"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "dirt_asteroid_2",
+      "zone": "zone_2",
+      "spawn_weight": 60,
+      "category": "dirt",
+      "outer_shell": [
+        "minecraft:coarse_dirt"
+      ],
+      "inner_blocks": [
+        "minecraft:coarse_dirt"
+      ],
+      "ores": [
+        "minecraft:coal_ore",
+        "deepspace:fossil",
+        "minecraft:bone_block"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "dirt_asteroid_3",
+      "zone": "zone_3",
+      "spawn_weight": 60,
+      "category": "dirt",
+      "outer_shell": [
+        "minecraft:coarse_dirt"
+      ],
+      "inner_blocks": [
+        "minecraft:coarse_dirt"
+      ],
+      "ores": [
+        "minecraft:coal_ore",
+        "deepspace:fossil",
+        "minecraft:bone_block"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "dirt_asteroid_4",
+      "zone": "zone_4",
+      "spawn_weight": 60,
+      "category": "dirt",
+      "outer_shell": [
+        "minecraft:coarse_dirt"
+      ],
+      "inner_blocks": [
+        "minecraft:coarse_dirt"
+      ],
+      "ores": [
+        "minecraft:coal_ore",
+        "deepspace:fossil",
+        "minecraft:bone_block"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "dirt_asteroid_5",
+      "zone": "zone_2",
+      "spawn_weight": 60,
+      "category": "dirt",
+      "outer_shell": [
+        "minecraft:coarse_dirt"
+      ],
+      "inner_blocks": [
+        "minecraft:coarse_dirt"
+      ],
+      "ores": [
+        "minecraft:coal_ore",
+        "deepspace:fossil",
+        "minecraft:bone_block"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "clay_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 60,
+      "category": "sedimentary",
+      "outer_shell": [
+        "minecraft:clay"
+      ],
+      "inner_blocks": [
+        "minecraft:clay"
+      ],
+      "ores": [],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "lava_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 40,
+      "category": "volcanic",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:lava"
+      ],
+      "ores": [
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": "minecraft:lava",
+      "has_drilling_vein": true,
+      "avg_fluid_amount_mb": 150000
+    },
+    {
+      "id": "oil_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 35,
+      "category": "carbonaceous",
+      "outer_shell": [
+        "deepspace:tar_shell"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [],
+      "fluid": "gtceu:oil",
+      "has_drilling_vein": true,
+      "avg_fluid_amount_mb": 700000
+    },
+    {
+      "id": "salt_water_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 30,
+      "category": "icy",
+      "outer_shell": [
+        "minecraft:ice"
+      ],
+      "inner_blocks": [
+        "minecraft:ice"
+      ],
+      "ores": [],
+      "fluid": "gtceu:salt_water",
+      "has_drilling_vein": true,
+      "avg_fluid_amount_mb": 450000
+    },
+    {
+      "id": "methane_gas_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 20,
+      "category": "gas",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:air"
+      ],
+      "ores": [
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": "gtceu:methane",
+      "has_drilling_vein": true,
+      "avg_fluid_amount_mb": 900000
+    },
+    {
+      "id": "hydrogen_gas_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 18,
+      "category": "gas",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:air"
+      ],
+      "ores": [
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": "gtceu:hydrogen",
+      "has_drilling_vein": true,
+      "avg_fluid_amount_mb": 800000
+    },
+    {
+      "id": "nitrogen_gas_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 18,
+      "category": "gas",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:air"
+      ],
+      "ores": [
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": "gtceu:nitrogen",
+      "has_drilling_vein": true,
+      "avg_fluid_amount_mb": 800000
+    },
+    {
+      "id": "exotic_ice_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 15,
+      "category": "icy",
+      "outer_shell": [
+        "minecraft:blue_ice"
+      ],
+      "inner_blocks": [
+        "deepspace:exotic_ice"
+      ],
+      "ores": [],
+      "fluid": "minecraft:water",
+      "has_drilling_vein": true,
+      "avg_fluid_amount_mb": 3500000
+    },
+    {
+      "id": "heavy_oil_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 12,
+      "category": "carbonaceous",
+      "outer_shell": [
+        "deepspace:tar_shell"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [],
+      "fluid": "gtceu:oil_heavy",
+      "has_drilling_vein": true,
+      "avg_fluid_amount_mb": 4000000
+    },
+    {
+      "id": "sand_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 45,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:sandstone"
+      ],
+      "inner_blocks": [
+        "minecraft:sand"
+      ],
+      "ores": [
+        "gtceu:oil_medium",
+        "gtceu:sand_cassiterite_ore",
+        "gtceu:sand_garnet_red_ore",
+        "gtceu:sand_garnet_yellow_ore",
+        "gtceu:sand_glauconite_ore",
+        "gtceu:sand_iron_ore",
+        "gtceu:sand_gold_ore",
+        "gtceu:sand_copper_ore",
+        "gtceu:sand_pyrite_ore",
+        "gtceu:sand_salt_ore",
+        "gtceu:sand_rock_salt_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "sand_oil_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:sandstone"
+      ],
+      "inner_blocks": [
+        "minecraft:sand"
+      ],
+      "ores": [
+        "gtceu:oil_medium",
+        "gtceu:sand_cassiterite_ore",
+        "gtceu:sand_garnet_red_ore",
+        "gtceu:sand_garnet_yellow_ore",
+        "gtceu:sand_glauconite_ore",
+        "gtceu:sand_iron_ore",
+        "gtceu:sand_gold_ore",
+        "gtceu:sand_copper_ore",
+        "gtceu:sand_pyrite_ore",
+        "gtceu:sand_salt_ore",
+        "gtceu:sand_rock_salt_ore"
+      ],
+      "fluid": "gtceu:oil_medium",
+      "has_drilling_vein": true,
+      "avg_fluid_amount_mb": 200000
+    },
+    {
+      "id": "raw_oil_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 30,
+      "category": "carbonaceous",
+      "outer_shell": [
+        "deepspace:tar_shell"
+      ],
+      "inner_blocks": [
+        "gtceu:oil_medium"
+      ],
+      "ores": [],
+      "fluid": "gtceu:oil_medium",
+      "has_drilling_vein": true,
+      "avg_fluid_amount_mb": 500000
+    },
+    {
+      "id": "raw_oil_asteroid_rich",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "carbonaceous",
+      "outer_shell": [
+        "deepspace:tar_shell"
+      ],
+      "inner_blocks": [
+        "gtceu:oil_medium"
+      ],
+      "ores": [],
+      "fluid": "gtceu:oil_medium",
+      "has_drilling_vein": true,
+      "avg_fluid_amount_mb": 1500000
+    },
+    {
+      "id": "stony_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 55,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone",
+        "minecraft:gravel"
+      ],
+      "ores": [
+        "gtceu:stone_ilmenite_ore",
+        "gtceu:gravel_ilmenite_ore",
+        "gtceu:gravel_iron_ore",
+        "gtceu:gravel_copper_ore",
+        "gtceu:gravel_tin_ore",
+        "gtceu:gravel_nickel_ore",
+        "gtceu:gravel_gold_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0,
+      "gravity_layered": true
+    },
+    {
+      "id": "iron_diorite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 35,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_iron_ore",
+        "gtceu:diorite_cobaltite_ore",
+        "gtceu:diorite_pyrite_ore",
+        "gtceu:diorite_magnetite_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "iron_andesite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 35,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_iron_ore",
+        "gtceu:andesite_cobaltite_ore",
+        "gtceu:andesite_pyrite_ore",
+        "gtceu:andesite_magnetite_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "iron_marble_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_iron_ore",
+        "minecraft:quartz_block",
+        "gtceu:marble_cobaltite_ore",
+        "gtceu:marble_pyrite_ore",
+        "gtceu:marble_magnetite_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "iron_basalt_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_iron_ore",
+        "gtceu:basalt_cobaltite_ore",
+        "gtceu:basalt_pyrite_ore",
+        "gtceu:basalt_magnetite_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "iron_red_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_iron_ore",
+        "gtceu:red_granite_cobaltite_ore",
+        "gtceu:red_granite_pyrite_ore",
+        "gtceu:red_granite_magnetite_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "iron_tuff_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_iron_ore",
+        "gtceu:tuff_cobaltite_ore",
+        "gtceu:tuff_pyrite_ore",
+        "gtceu:tuff_magnetite_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "gold_diorite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 35,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_gold_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "gold_andesite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 35,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_gold_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "gold_marble_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_gold_ore",
+        "minecraft:quartz_block",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "gold_basalt_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_gold_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "gold_red_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_gold_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "gold_tuff_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_gold_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "copper_diorite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 35,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_copper_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "copper_andesite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 35,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_copper_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "copper_marble_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_copper_ore",
+        "minecraft:quartz_block",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "copper_basalt_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_copper_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "copper_red_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_copper_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "copper_tuff_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_copper_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "redstone_diorite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 35,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_redstone_ore",
+        "gtceu:diorite_ilmenite_ore",
+        "gtceu:diorite_realgar_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "redstone_andesite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 35,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_redstone_ore",
+        "gtceu:andesite_ilmenite_ore",
+        "gtceu:andesite_realgar_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "redstone_marble_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_redstone_ore",
+        "minecraft:quartz_block",
+        "gtceu:marble_ilmenite_ore",
+        "gtceu:marble_realgar_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "redstone_basalt_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_redstone_ore",
+        "gtceu:basalt_ilmenite_ore",
+        "gtceu:basalt_realgar_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "redstone_red_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_redstone_ore",
+        "gtceu:red_granite_ilmenite_ore",
+        "gtceu:red_granite_realgar_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "redstone_tuff_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_redstone_ore",
+        "gtceu:tuff_ilmenite_ore",
+        "gtceu:tuff_realgar_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "tin_diorite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 35,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_tin_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "tin_andesite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 35,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_tin_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "tin_marble_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_tin_ore",
+        "minecraft:quartz_block",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "tin_basalt_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_tin_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "tin_red_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_tin_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "tin_tuff_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_tin_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "coal_diorite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 35,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_coal_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "coal_andesite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 35,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_coal_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "coal_marble_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_coal_ore",
+        "minecraft:quartz_block",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "coal_basalt_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_coal_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "coal_red_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_coal_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "coal_tuff_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_coal_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "calcite_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_calcite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "calcite_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_calcite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "calcite_diorite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 17,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_calcite_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "calcite_andesite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 17,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_calcite_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "calcite_deepslate_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_calcite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "calcite_marble_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 12,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_calcite_ore",
+        "minecraft:quartz_block",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "calcite_basalt_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 12,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_calcite_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "calcite_red_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 10,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_calcite_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "calcite_tuff_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 10,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_calcite_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "stibnite_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_stibnite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "stibnite_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_stibnite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "stibnite_diorite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 17,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_stibnite_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "stibnite_andesite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 17,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_stibnite_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "stibnite_deepslate_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_stibnite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "stibnite_marble_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 12,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_stibnite_ore",
+        "minecraft:quartz_block",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "stibnite_basalt_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 12,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_stibnite_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "stibnite_red_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 10,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_stibnite_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "stibnite_tuff_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 10,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_stibnite_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "tuff_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 30,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff",
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:tuff_iron_ore",
+        "gtceu:tuff_gold_ore",
+        "gtceu:tuff_copper_ore",
+        "gtceu:tuff_redstone_ore",
+        "gtceu:tuff_tin_ore",
+        "gtceu:tuff_coal_ore",
+        "gtceu:tuff_calcite_ore",
+        "gtceu:tuff_stibnite_ore",
+        "minecraft:copper_ore",
+        "minecraft:iron_ore",
+        "minecraft:gold_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0,
+      "gravity_layered": false
+    },
+    {
+      "id": "sky_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "alien",
+      "outer_shell": [
+        "ae2:sky_stone_block",
+        "ae2:sky_stone_brick",
+        "ae2:sky_stone_small_brick"
+      ],
+      "inner_blocks": [
+        "ae2:sky_stone_block",
+        "ae2:sky_stone_brick",
+        "ae2:sky_stone_small_brick"
+      ],
+      "ores": [
+        "ae2:certus_quartz_ore",
+        "ae2:charged_certus_quartz_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0,
+      "gravity_layered": false
+    },
+    {
+      "id": "sulfur_andesite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 30,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_sulfur_ore",
+        "gtceu:andesite_pyrite_ore",
+        "gtceu:andesite_saltpeter_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "sulfur_diorite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 30,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_sulfur_ore",
+        "gtceu:diorite_pyrite_ore",
+        "gtceu:diorite_saltpeter_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "sulfur_tuff_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 22,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_sulfur_ore",
+        "gtceu:tuff_pyrite_ore",
+        "gtceu:tuff_saltpeter_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "sulfur_basalt_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 22,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_sulfur_ore",
+        "gtceu:basalt_pyrite_ore",
+        "gtceu:basalt_saltpeter_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "sulfur_marble_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 18,
+      "category": "metallic",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_sulfur_ore",
+        "gtceu:marble_pyrite_ore",
+        "gtceu:marble_saltpeter_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "sulfur_red_granite_asteroid",
+      "zone": "zone_1",
+      "spawn_weight": 18,
+      "category": "metallic",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_sulfur_ore",
+        "gtceu:red_granite_pyrite_ore",
+        "gtceu:red_granite_saltpeter_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "chromite_andesite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_chromite_ore",
+        "gtceu:andesite_vanadium_magnetite_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "chromite_diorite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_chromite_ore",
+        "gtceu:diorite_vanadium_magnetite_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "chromite_tuff_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 18,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_chromite_ore",
+        "gtceu:tuff_vanadium_magnetite_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "chromite_basalt_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 18,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_chromite_ore",
+        "gtceu:basalt_vanadium_magnetite_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "chromite_marble_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 15,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_chromite_ore",
+        "gtceu:marble_vanadium_magnetite_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "chromite_red_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 15,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_chromite_ore",
+        "gtceu:red_granite_vanadium_magnetite_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "naquadah_granite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 7,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_naquadah_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "naquadah_andesite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 5,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_naquadah_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "naquadah_diorite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 5,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_naquadah_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "naquadah_tuff_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 4,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_naquadah_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "naquadah_basalt_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 4,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_naquadah_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "naquadah_marble_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 3,
+      "category": "exotic",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_naquadah_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "naquadah_red_granite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 3,
+      "category": "exotic",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_naquadah_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "iridium_granite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 7,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_iridium_ore",
+        "gtceu:granite_osmium_ore",
+        "gtceu:granite_platinum_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "iridium_andesite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 5,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_iridium_ore",
+        "gtceu:andesite_osmium_ore",
+        "gtceu:andesite_platinum_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "iridium_diorite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 5,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_iridium_ore",
+        "gtceu:diorite_osmium_ore",
+        "gtceu:diorite_platinum_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "iridium_tuff_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 4,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_iridium_ore",
+        "gtceu:tuff_osmium_ore",
+        "gtceu:tuff_platinum_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "iridium_basalt_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 4,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_iridium_ore",
+        "gtceu:basalt_osmium_ore",
+        "gtceu:basalt_platinum_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "iridium_marble_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 3,
+      "category": "exotic",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_iridium_ore",
+        "gtceu:marble_osmium_ore",
+        "gtceu:marble_platinum_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "iridium_red_granite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 3,
+      "category": "exotic",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_iridium_ore",
+        "gtceu:red_granite_osmium_ore",
+        "gtceu:red_granite_platinum_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "aluminium_andesite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_bauxite_ore",
+        "gtceu:andesite_aluminium_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "aluminium_diorite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_bauxite_ore",
+        "gtceu:diorite_aluminium_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "aluminium_tuff_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 18,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_bauxite_ore",
+        "gtceu:tuff_aluminium_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "aluminium_basalt_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 18,
+      "category": "metallic",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_bauxite_ore",
+        "gtceu:basalt_aluminium_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "aluminium_marble_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 15,
+      "category": "metallic",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_bauxite_ore",
+        "gtceu:marble_aluminium_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "aluminium_red_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 15,
+      "category": "metallic",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_bauxite_ore",
+        "gtceu:red_granite_aluminium_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "manganese_andesite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_manganese_ore",
+        "gtceu:andesite_chromite_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "manganese_diorite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_manganese_ore",
+        "gtceu:diorite_chromite_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "manganese_tuff_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 18,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_manganese_ore",
+        "gtceu:tuff_chromite_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "manganese_basalt_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 18,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_manganese_ore",
+        "gtceu:basalt_chromite_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "manganese_marble_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 15,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_manganese_ore",
+        "gtceu:marble_chromite_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "manganese_red_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 15,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_manganese_ore",
+        "gtceu:red_granite_chromite_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "molybdenum_granite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_molybdenum_ore",
+        "gtceu:granite_molybdenite_ore",
+        "gtceu:granite_powellite_ore",
+        "gtceu:granite_wulfenite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "molybdenum_andesite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 12,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_molybdenum_ore",
+        "gtceu:andesite_molybdenite_ore",
+        "gtceu:andesite_powellite_ore",
+        "gtceu:andesite_wulfenite_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "molybdenum_diorite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 12,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_molybdenum_ore",
+        "gtceu:diorite_molybdenite_ore",
+        "gtceu:diorite_powellite_ore",
+        "gtceu:diorite_wulfenite_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "molybdenum_tuff_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 9,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_molybdenum_ore",
+        "gtceu:tuff_molybdenite_ore",
+        "gtceu:tuff_powellite_ore",
+        "gtceu:tuff_wulfenite_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "molybdenum_basalt_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 9,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_molybdenum_ore",
+        "gtceu:basalt_molybdenite_ore",
+        "gtceu:basalt_powellite_ore",
+        "gtceu:basalt_wulfenite_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "molybdenum_marble_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 7,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_molybdenum_ore",
+        "gtceu:marble_molybdenite_ore",
+        "gtceu:marble_powellite_ore",
+        "gtceu:marble_wulfenite_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "molybdenum_red_granite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 7,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_molybdenum_ore",
+        "gtceu:red_granite_molybdenite_ore",
+        "gtceu:red_granite_powellite_ore",
+        "gtceu:red_granite_wulfenite_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "scheelite_granite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_scheelite_ore",
+        "gtceu:granite_tungstate_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "scheelite_andesite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 12,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_scheelite_ore",
+        "gtceu:andesite_tungstate_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "scheelite_diorite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 12,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_scheelite_ore",
+        "gtceu:diorite_tungstate_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "scheelite_tuff_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 9,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_scheelite_ore",
+        "gtceu:tuff_tungstate_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "scheelite_basalt_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 9,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_scheelite_ore",
+        "gtceu:basalt_tungstate_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "scheelite_marble_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 7,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_scheelite_ore",
+        "gtceu:marble_tungstate_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "scheelite_red_granite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 7,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_scheelite_ore",
+        "gtceu:red_granite_tungstate_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "apatite_andesite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_apatite_ore",
+        "gtceu:andesite_tricalcium_phosphate_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "apatite_diorite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_apatite_ore",
+        "gtceu:diorite_tricalcium_phosphate_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "apatite_tuff_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 18,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_apatite_ore",
+        "gtceu:tuff_tricalcium_phosphate_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "apatite_basalt_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 18,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_apatite_ore",
+        "gtceu:basalt_tricalcium_phosphate_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "apatite_marble_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 15,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_apatite_ore",
+        "gtceu:marble_tricalcium_phosphate_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "apatite_red_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 15,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_apatite_ore",
+        "gtceu:red_granite_tricalcium_phosphate_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "sphalerite_andesite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_sphalerite_ore",
+        "gtceu:andesite_tetrahedrite_ore",
+        "gtceu:andesite_galena_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "sphalerite_diorite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_sphalerite_ore",
+        "gtceu:diorite_tetrahedrite_ore",
+        "gtceu:diorite_galena_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "sphalerite_tuff_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 18,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_sphalerite_ore",
+        "gtceu:tuff_tetrahedrite_ore",
+        "gtceu:tuff_galena_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "sphalerite_basalt_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 18,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_sphalerite_ore",
+        "gtceu:basalt_tetrahedrite_ore",
+        "gtceu:basalt_galena_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "sphalerite_marble_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 15,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_sphalerite_ore",
+        "gtceu:marble_tetrahedrite_ore",
+        "gtceu:marble_galena_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "sphalerite_red_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 15,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_sphalerite_ore",
+        "gtceu:red_granite_tetrahedrite_ore",
+        "gtceu:red_granite_galena_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "vanadiummag_granite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_vanadium_magnetite_ore",
+        "gtceu:granite_chromite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "vanadiummag_andesite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 12,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_vanadium_magnetite_ore",
+        "gtceu:andesite_chromite_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "vanadiummag_diorite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 12,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_vanadium_magnetite_ore",
+        "gtceu:diorite_chromite_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "vanadiummag_tuff_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 9,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_vanadium_magnetite_ore",
+        "gtceu:tuff_chromite_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "vanadiummag_basalt_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 9,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_vanadium_magnetite_ore",
+        "gtceu:basalt_chromite_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "vanadiummag_marble_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 7,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_vanadium_magnetite_ore",
+        "gtceu:marble_chromite_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "vanadiummag_red_granite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 7,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_vanadium_magnetite_ore",
+        "gtceu:red_granite_chromite_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "platinum_granite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_platinum_ore",
+        "gtceu:granite_cooperite_ore",
+        "gtceu:granite_palladium_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "platinum_andesite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 12,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_platinum_ore",
+        "gtceu:andesite_cooperite_ore",
+        "gtceu:andesite_palladium_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "platinum_diorite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 12,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_platinum_ore",
+        "gtceu:diorite_cooperite_ore",
+        "gtceu:diorite_palladium_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "platinum_tuff_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 9,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_platinum_ore",
+        "gtceu:tuff_cooperite_ore",
+        "gtceu:tuff_palladium_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "platinum_basalt_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 9,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_platinum_ore",
+        "gtceu:basalt_cooperite_ore",
+        "gtceu:basalt_palladium_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "platinum_marble_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 7,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_platinum_ore",
+        "gtceu:marble_cooperite_ore",
+        "gtceu:marble_palladium_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "platinum_red_granite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 7,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_platinum_ore",
+        "gtceu:red_granite_cooperite_ore",
+        "gtceu:red_granite_palladium_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "monazite_granite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_monazite_ore",
+        "gtceu:granite_neodymium_ore",
+        "gtceu:granite_bastnasite_ore",
+        "gtceu:granite_thorium_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "monazite_andesite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 12,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_monazite_ore",
+        "gtceu:andesite_neodymium_ore",
+        "gtceu:andesite_bastnasite_ore",
+        "gtceu:andesite_thorium_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "monazite_diorite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 12,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_monazite_ore",
+        "gtceu:diorite_neodymium_ore",
+        "gtceu:diorite_bastnasite_ore",
+        "gtceu:diorite_thorium_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "monazite_tuff_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 9,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_monazite_ore",
+        "gtceu:tuff_neodymium_ore",
+        "gtceu:tuff_bastnasite_ore",
+        "gtceu:tuff_thorium_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "monazite_basalt_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 9,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_monazite_ore",
+        "gtceu:basalt_neodymium_ore",
+        "gtceu:basalt_bastnasite_ore",
+        "gtceu:basalt_thorium_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "monazite_marble_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 7,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_monazite_ore",
+        "gtceu:marble_neodymium_ore",
+        "gtceu:marble_bastnasite_ore",
+        "gtceu:marble_thorium_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "monazite_red_granite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 7,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_monazite_ore",
+        "gtceu:red_granite_neodymium_ore",
+        "gtceu:red_granite_bastnasite_ore",
+        "gtceu:red_granite_thorium_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "bastnasite_granite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 7,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_bastnasite_ore",
+        "gtceu:granite_monazite_ore",
+        "gtceu:granite_neodymium_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "bastnasite_andesite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 5,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_bastnasite_ore",
+        "gtceu:andesite_monazite_ore",
+        "gtceu:andesite_neodymium_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "bastnasite_diorite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 5,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_bastnasite_ore",
+        "gtceu:diorite_monazite_ore",
+        "gtceu:diorite_neodymium_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "bastnasite_tuff_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 4,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_bastnasite_ore",
+        "gtceu:tuff_monazite_ore",
+        "gtceu:tuff_neodymium_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "bastnasite_basalt_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 4,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_bastnasite_ore",
+        "gtceu:basalt_monazite_ore",
+        "gtceu:basalt_neodymium_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "bastnasite_marble_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 3,
+      "category": "exotic",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_bastnasite_ore",
+        "gtceu:marble_monazite_ore",
+        "gtceu:marble_neodymium_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "bastnasite_red_granite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 3,
+      "category": "exotic",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_bastnasite_ore",
+        "gtceu:red_granite_monazite_ore",
+        "gtceu:red_granite_neodymium_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "uraninite_granite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 7,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_uraninite_ore",
+        "gtceu:granite_pitchblende_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "uraninite_andesite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 5,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_uraninite_ore",
+        "gtceu:andesite_pitchblende_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "uraninite_diorite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 5,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_uraninite_ore",
+        "gtceu:diorite_pitchblende_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "uraninite_tuff_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 4,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_uraninite_ore",
+        "gtceu:tuff_pitchblende_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "uraninite_basalt_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 4,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_uraninite_ore",
+        "gtceu:basalt_pitchblende_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "uraninite_marble_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 3,
+      "category": "exotic",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_uraninite_ore",
+        "gtceu:marble_pitchblende_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "uraninite_red_granite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 3,
+      "category": "exotic",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_uraninite_ore",
+        "gtceu:red_granite_pitchblende_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "osmium_stone_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 10,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_osmium_ore",
+        "gtceu:stone_iridium_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "osmium_granite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 7,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_osmium_ore",
+        "gtceu:granite_iridium_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "osmium_deepslate_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 7,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_osmium_ore",
+        "gtceu:deepslate_iridium_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "osmium_andesite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 5,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_osmium_ore",
+        "gtceu:andesite_iridium_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "osmium_diorite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 5,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_osmium_ore",
+        "gtceu:diorite_iridium_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "osmium_tuff_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 4,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_osmium_ore",
+        "gtceu:tuff_iridium_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "osmium_basalt_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 4,
+      "category": "exotic",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_osmium_ore",
+        "gtceu:basalt_iridium_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "osmium_marble_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 3,
+      "category": "exotic",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_osmium_ore",
+        "gtceu:marble_iridium_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "osmium_red_granite_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 3,
+      "category": "exotic",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_osmium_ore",
+        "gtceu:red_granite_iridium_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "neodymium_stone_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 22,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_neodymium_ore",
+        "gtceu:stone_monazite_ore",
+        "gtceu:stone_bastnasite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "neodymium_granite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_neodymium_ore",
+        "gtceu:granite_monazite_ore",
+        "gtceu:granite_bastnasite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "neodymium_deepslate_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_neodymium_ore",
+        "gtceu:deepslate_monazite_ore",
+        "gtceu:deepslate_bastnasite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "neodymium_andesite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 12,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_neodymium_ore",
+        "gtceu:andesite_monazite_ore",
+        "gtceu:andesite_bastnasite_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "neodymium_diorite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 12,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_neodymium_ore",
+        "gtceu:diorite_monazite_ore",
+        "gtceu:diorite_bastnasite_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "neodymium_tuff_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 9,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_neodymium_ore",
+        "gtceu:tuff_monazite_ore",
+        "gtceu:tuff_bastnasite_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "neodymium_basalt_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 9,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_neodymium_ore",
+        "gtceu:basalt_monazite_ore",
+        "gtceu:basalt_bastnasite_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "neodymium_marble_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 7,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_neodymium_ore",
+        "gtceu:marble_monazite_ore",
+        "gtceu:marble_bastnasite_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "neodymium_red_granite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 7,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_neodymium_ore",
+        "gtceu:red_granite_monazite_ore",
+        "gtceu:red_granite_bastnasite_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "pyrochlore_stone_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 22,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:stone_pyrochlore_ore",
+        "gtceu:stone_tantalite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "pyrochlore_granite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_pyrochlore_ore",
+        "gtceu:granite_tantalite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "pyrochlore_deepslate_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_pyrochlore_ore",
+        "gtceu:deepslate_tantalite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "pyrochlore_andesite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 12,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_pyrochlore_ore",
+        "gtceu:andesite_tantalite_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "pyrochlore_diorite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 12,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_pyrochlore_ore",
+        "gtceu:diorite_tantalite_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "pyrochlore_tuff_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 9,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_pyrochlore_ore",
+        "gtceu:tuff_tantalite_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "pyrochlore_basalt_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 9,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_pyrochlore_ore",
+        "gtceu:basalt_tantalite_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "pyrochlore_marble_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 7,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_pyrochlore_ore",
+        "gtceu:marble_tantalite_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "pyrochlore_red_granite_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 7,
+      "category": "rare_metallic",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_pyrochlore_ore",
+        "gtceu:red_granite_tantalite_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "lithium_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 45,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:lithium_ore",
+        "gtceu:stone_spodumene_ore",
+        "gtceu:stone_lepidolite_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "lithium_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 33,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_lithium_ore",
+        "gtceu:granite_spodumene_ore",
+        "gtceu:granite_lepidolite_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "lithium_deepslate_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 33,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_lithium_ore",
+        "gtceu:deepslate_spodumene_ore",
+        "gtceu:deepslate_lepidolite_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "lithium_andesite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_lithium_ore",
+        "gtceu:andesite_spodumene_ore",
+        "gtceu:andesite_lepidolite_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "lithium_diorite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_lithium_ore",
+        "gtceu:diorite_spodumene_ore",
+        "gtceu:diorite_lepidolite_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "lithium_tuff_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 18,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_lithium_ore",
+        "gtceu:tuff_spodumene_ore",
+        "gtceu:tuff_lepidolite_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "lithium_basalt_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 18,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_lithium_ore",
+        "gtceu:basalt_spodumene_ore",
+        "gtceu:basalt_lepidolite_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "lithium_marble_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 15,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_lithium_ore",
+        "gtceu:marble_spodumene_ore",
+        "gtceu:marble_lepidolite_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "lithium_red_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 15,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_lithium_ore",
+        "gtceu:red_granite_spodumene_ore",
+        "gtceu:red_granite_lepidolite_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "realgar_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 45,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [
+        "gtceu:realgar_ore",
+        "gtceu:stone_pyrite_ore",
+        "gtceu:stone_sulfur_ore",
+        "gtceu:stone_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "realgar_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 33,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [
+        "gtceu:granite_realgar_ore",
+        "gtceu:granite_pyrite_ore",
+        "gtceu:granite_sulfur_ore",
+        "gtceu:granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "realgar_deepslate_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 33,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [
+        "gtceu:deepslate_realgar_ore",
+        "gtceu:deepslate_pyrite_ore",
+        "gtceu:deepslate_sulfur_ore",
+        "gtceu:deepslate_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "realgar_andesite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [
+        "gtceu:andesite_realgar_ore",
+        "gtceu:andesite_pyrite_ore",
+        "gtceu:andesite_sulfur_ore",
+        "gtceu:andesite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "realgar_diorite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 25,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [
+        "gtceu:diorite_realgar_ore",
+        "gtceu:diorite_pyrite_ore",
+        "gtceu:diorite_sulfur_ore",
+        "gtceu:diorite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "realgar_tuff_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 18,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [
+        "gtceu:tuff_realgar_ore",
+        "gtceu:tuff_pyrite_ore",
+        "gtceu:tuff_sulfur_ore",
+        "gtceu:tuff_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "realgar_basalt_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 18,
+      "category": "silicate",
+      "outer_shell": [
+        "minecraft:basalt"
+      ],
+      "inner_blocks": [
+        "minecraft:basalt"
+      ],
+      "ores": [
+        "gtceu:basalt_realgar_ore",
+        "gtceu:basalt_pyrite_ore",
+        "gtceu:basalt_sulfur_ore",
+        "gtceu:basalt_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "realgar_marble_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 15,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [
+        "gtceu:marble_realgar_ore",
+        "gtceu:marble_pyrite_ore",
+        "gtceu:marble_sulfur_ore",
+        "gtceu:marble_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "realgar_red_granite_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 15,
+      "category": "silicate",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [
+        "gtceu:red_granite_realgar_ore",
+        "gtceu:red_granite_pyrite_ore",
+        "gtceu:red_granite_sulfur_ore",
+        "gtceu:red_granite_ilmenite_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "helium_gas_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 18,
+      "category": "gas",
+      "outer_shell": [
+        "minecraft:ice"
+      ],
+      "inner_blocks": [
+        "minecraft:air"
+      ],
+      "ores": [],
+      "fluid": "gtceu:helium",
+      "has_drilling_vein": true,
+      "avg_fluid_amount_mb": 850000
+    },
+    {
+      "id": "alien_stone_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 20,
+      "category": "alien",
+      "outer_shell": [
+        "deepspace:alien_stone"
+      ],
+      "inner_blocks": [
+        "deepspace:alien_stone"
+      ],
+      "ores": [
+        "ae2:certus_quartz_ore",
+        "ae2:charged_certus_quartz_ore"
+      ],
+      "fluid": null,
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "liquid_helium_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "gas",
+      "outer_shell": [
+        "deepspace:alien_stone"
+      ],
+      "inner_blocks": [
+        "deepspace:alien_stone"
+      ],
+      "ores": [],
+      "fluid": "gtceu:helium",
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "liquid_glowstone_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "gas",
+      "outer_shell": [
+        "deepspace:alien_stone"
+      ],
+      "inner_blocks": [
+        "deepspace:alien_stone"
+      ],
+      "ores": [],
+      "fluid": "gtceu:glowstone",
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "liquid_glass_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "carbonaceous",
+      "outer_shell": [
+        "deepspace:tar_shell"
+      ],
+      "inner_blocks": [
+        "deepspace:tar_shell"
+      ],
+      "ores": [],
+      "fluid": "gtceu:glass",
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "liquid_iron_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 16,
+      "category": "gas",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [],
+      "fluid": "gtceu:iron",
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "liquid_copper_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 16,
+      "category": "gas",
+      "outer_shell": [
+        "minecraft:diorite"
+      ],
+      "inner_blocks": [
+        "minecraft:diorite"
+      ],
+      "ores": [],
+      "fluid": "gtceu:copper",
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "liquid_lead_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "gas",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [],
+      "fluid": "gtceu:lead",
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "liquid_tin_asteroid",
+      "zone": "zone_2",
+      "spawn_weight": 16,
+      "category": "gas",
+      "outer_shell": [
+        "minecraft:granite"
+      ],
+      "inner_blocks": [
+        "minecraft:granite"
+      ],
+      "ores": [],
+      "fluid": "gtceu:tin",
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "liquid_silver_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "gas",
+      "outer_shell": [
+        "gtceu:marble"
+      ],
+      "inner_blocks": [
+        "gtceu:marble"
+      ],
+      "ores": [],
+      "fluid": "gtceu:silver",
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "liquid_gold_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "gas",
+      "outer_shell": [
+        "minecraft:deepslate"
+      ],
+      "inner_blocks": [
+        "minecraft:deepslate"
+      ],
+      "ores": [],
+      "fluid": "gtceu:gold",
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "liquid_nitrogen_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "gas",
+      "outer_shell": [
+        "gtceu:red_granite"
+      ],
+      "inner_blocks": [
+        "gtceu:red_granite"
+      ],
+      "ores": [],
+      "fluid": "gtceu:nitrogen",
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "liquid_air_asteroid",
+      "zone": "zone_3",
+      "spawn_weight": 16,
+      "category": "gas",
+      "outer_shell": [
+        "minecraft:tuff"
+      ],
+      "inner_blocks": [
+        "minecraft:tuff"
+      ],
+      "ores": [],
+      "fluid": "gtceu:liquid_air",
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "liquid_nether_air_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 16,
+      "category": "gas",
+      "outer_shell": [
+        "minecraft:andesite"
+      ],
+      "inner_blocks": [
+        "minecraft:andesite"
+      ],
+      "ores": [],
+      "fluid": "gtceu:liquid_nether_air",
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    },
+    {
+      "id": "liquid_ender_air_asteroid",
+      "zone": "zone_4",
+      "spawn_weight": 16,
+      "category": "gas",
+      "outer_shell": [
+        "minecraft:stone"
+      ],
+      "inner_blocks": [
+        "minecraft:stone"
+      ],
+      "ores": [],
+      "fluid": "gtceu:liquid_ender_air",
+      "has_drilling_vein": false,
+      "avg_fluid_amount_mb": 0
+    }
+  ],
+  "generation_logic": {
+    "tier_resolution": "distance_from_nearest_crash_site",
+    "personal_seed_formula": "hash(worldSeed ^ playerUUID.getMostSignificantBits())",
+    "fluid_vein_alignment": "center_chunk_below_asteroid",
+    "retry_attempts_if_conflict": 8,
+    "abort_if_claim_detected": true
+  }
+}

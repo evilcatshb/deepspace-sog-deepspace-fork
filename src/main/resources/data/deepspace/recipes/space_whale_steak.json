@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": { "item": "deepspace:space_whale_meat" },
+  "result": "deepspace:space_whale_steak",
+  "experience": 0.35,
+  "cookingtime": 200
+}

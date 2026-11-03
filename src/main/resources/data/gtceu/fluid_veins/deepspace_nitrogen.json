@@ -1,0 +1,14 @@
+{
+  "fluid": "gtceu:nitrogen",
+  "weight": 80,
+  "yield": {
+    "min": 450,
+    "max": 1150
+  },
+  "depletion_amount": 1,
+  "depletion_chance": 1,
+  "depleted_yield": 55,
+  "dimension_filter": [
+    "deepspace:deep_space"
+  ]
+}

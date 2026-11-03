@@ -1,0 +1,37 @@
+{
+  "weight": 80,
+  "size": 16,
+  "yield": 60,
+  "depletion_amount": 1,
+  "depletion_chance": 100,
+  "depleted_yield": 0,
+  "materials": [
+    {
+      "material": "garnet_red",
+      "weight": 35
+    },
+    {
+      "material": "garnet_yellow",
+      "weight": 30
+    },
+    {
+      "material": "almandine",
+      "weight": 25
+    },
+    {
+      "material": "grossular",
+      "weight": 20
+    },
+    {
+      "material": "pyrope",
+      "weight": 15
+    },
+    {
+      "material": "spessartine",
+      "weight": 10
+    }
+  ],
+  "dimension_filter": [
+    "deepspace:deep_space"
+  ]
+}

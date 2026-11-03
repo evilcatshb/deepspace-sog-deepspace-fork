@@ -1,0 +1,14 @@
+{
+  "fluid": "minecraft:lava",
+  "weight": 150,
+  "yield": {
+    "min": 80,
+    "max": 220
+  },
+  "depletion_amount": 1,
+  "depletion_chance": 1,
+  "depleted_yield": 20,
+  "dimension_filter": [
+    "deepspace:deep_space"
+  ]
+}

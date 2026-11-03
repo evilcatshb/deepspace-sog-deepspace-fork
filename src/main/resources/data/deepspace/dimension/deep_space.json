@@ -1,0 +1,10 @@
+{
+  "type": "deepspace:deep_space",
+  "generator": {
+    "type": "deepspace:asteroid_generator",
+    "biome_source": {
+      "type": "deepspace:space_biome_source",
+      "biome": "minecraft:the_void"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "weight": 80,
+  "size": 16,
+  "yield": 60,
+  "depletion_amount": 1,
+  "depletion_chance": 100,
+  "depleted_yield": 0,
+  "materials": [
+    {
+      "material": "uraninite",
+      "weight": 35
+    },
+    {
+      "material": "pitchblende",
+      "weight": 30
+    }
+  ],
+  "dimension_filter": [
+    "deepspace:deep_space"
+  ]
+}

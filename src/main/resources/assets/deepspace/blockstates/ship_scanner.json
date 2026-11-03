@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "deepspace:block/ship_scanner" },
+    "facing=south": { "model": "deepspace:block/ship_scanner", "y": 180 },
+    "facing=east":  { "model": "deepspace:block/ship_scanner", "y": 90 },
+    "facing=west":  { "model": "deepspace:block/ship_scanner", "y": 270 }
+  }
+}
